@@ -74,7 +74,7 @@ nav {
 		overflow: hidden;
 		-moz-border-radius: 0 0 0 5px;
 		border-radius: 0 0 0 5px;
-		opacity: .4;
+		opacity: .6;
 		z-index: 1;
 	}
 	nav a:active {
@@ -84,7 +84,7 @@ nav {
 header {
 	padding: 15px;
 	font-size: 14px;
-	color: #669be1;
+	color: #b3cdf0;
 	background: url(bg-top.png);
 }
 nav + header {
@@ -106,8 +106,6 @@ nav + header {
 	}
 	header p {
 		margin-top: .5em;
-		font-family: "Droid Serif", Georgia, Times, serif;
-		font-style: italic;
 		line-height: 1.2;
 	}
 
@@ -190,9 +188,7 @@ article.inset {
 		position: absolute;
 		right: 0;
 		top: 0;
-		font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
 		font-size: 12px;
-		font-style: italic;
 		line-height: 13px;
 		color: #838E98;
 	}
@@ -358,10 +354,8 @@ footer {
 	#thanks article a small {
 		display: block;
 		margin-bottom: .25em;
-		font-family: "Droid Serif", Georgia, Times, serif;
 		font-size: 13px;
 		font-weight: normal;
-		font-style: italic;
 		letter-spacing: normal;
 		color: #838E98;
 	}

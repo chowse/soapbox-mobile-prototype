@@ -86,6 +86,8 @@ header {
 	font-size: 14px;
 	color: #b3cdf0;
 	background: url(bg-top.png);
+	background: -moz-linear-gradient(center bottom , #2A4187 0%, #3B69B1 100%);
+	-moz-box-shadow: inset 0 -4px 0 rgba(0,0,0,.1);
 }
 nav + header {
 	padding-top: 20px;
@@ -114,9 +116,9 @@ article {
 	min-height: 275px;
 	padding-top: 5px;
 	color: #606060;
-	background: -moz-linear-gradient(-90deg, rgba(0,0,0,.25) 0, rgba(0,0,0,0) 6px),
-	            -moz-linear-gradient(-90deg, rgba(255,255,255,0) 0, rgba(255,255,255,.6) 120px),
+	background: -moz-linear-gradient(-90deg, rgba(255,255,255,0) 0, rgba(255,255,255,.6) 120px),
 	            url(bg.png);
+	-moz-box-shadow: inset 0 3px 0 rgba(0,0,0,.1);
 	-moz-box-sizing: border-box;
 }
 article.inset {
@@ -245,8 +247,13 @@ article.inset {
 	}
 	article button:active {
 		top: 2px;
-		-moz-box-shadow: 0px 1px 0 #438814,
-		                 inset 0 1000px 0 rgba(255,255,255,.25);
+		box-shadow: 0px 1px 0 #438814,
+		            inset 0 1000px 0 rgba(255,255,255,.25);
+	}
+	article button:disabled {
+		background: -moz-linear-gradient(#d6d6d6, #c3c3c3);
+		box-shadow: 0px 3px 0 #bababa;
+		text-shadow: 0 -1px 0 #c4c4c4;
 	}
 
 

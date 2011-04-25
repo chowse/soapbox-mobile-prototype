@@ -1,7 +1,22 @@
 
 
 (function() {
+	function enabler(checkId, inputId) {
+		var c = document.getElementById(checkId),
+		    i = document.getElementById(inputId);
+		
+		if (!c || !i) return;
+		
+		i.disabled = !c.checked;
+		
+		c.addEventListener('click', function(e) {
+			i.disabled = !c.checked;
+		}, false);
+	}
+	
 	document.addEventListener('submit', onSubmit, false);
+	enabler('happy-hasurl', 'happy-url');
+	enabler('sad-hasurl', 'sad-url');
 
 	
 	var submitOK = false;

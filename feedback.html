@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class=" no-js">
+<html class="no-dev no-js">
 
 <head>
 	<title>Submit Feedback</title>
@@ -9,8 +9,15 @@
 
 	<script type="text/javascript">
 		(function(root) {
-			root.className = root.className.replace(' no-js', ' js');
+			root.className = root.className.replace(/\bno-js\b/, ' js');
 		})(document.documentElement);
+
+		(function(loc) {
+			if (loc.hash == '') {
+				loc.replace(loc.href + '#top');
+				loc.reload();
+			}
+		})(document.location);
 	</script>
 </head>
 

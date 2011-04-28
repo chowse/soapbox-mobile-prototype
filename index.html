@@ -29,18 +29,23 @@
 
 
 <section id="top">
+	<nav><!-- Don't remove --></nav>
 	
 	<header>
-		<h1>Submit Your Feedback</h1>
-		<p>Your feedback helps make Firefox better!</p>
+		<h1>Give Feedback</h1>
+		<p>We love to hear your feedback on Firefox Mobile! What would you like to tell us?</p>
 	</header>
 
 	<article class="inset">
 		<ul class="blocks">
-			<li><a id="top-rate" href="#happy"><em class="icon"></em> <span>Firefox Made Me Happy</span></a></li>
-			<li><a id="top-broken" href="#sad"><em class="icon"></em> <span>Firefox Made Me Sad</span></a></li>
-			<li><a id="top-idea" href="#idea"><em class="icon"></em> <span>I have an Idea for Firefox</span></a></li>
+			<li><a id="top-rate" href="#happy"><em class="icon"></em> <span>Firefox made me happy&hellip;</span></a></li>
+			<li><a id="top-broken" href="#sad"><em class="icon"></em> <span>Firefox made me sad&hellip;</span></a></li>
+			<li><a id="top-idea" href="#idea"><em class="icon"></em> <span>I have an idea for Firefox&hellip;</span></a></li>
 		</ul>
+
+		<div class="field">
+			<p class="warning"><span>If you need help or have a problem with Firefox, please visit <a href="#">Firefox Support</a>. </span></p>
+		</div>
 	</article>
 
 </section>
@@ -52,29 +57,31 @@
 <section id="happy">
 	
 	<nav>
-		<a href="#top">Go Back</a>
+		<a href="#top">&#9666; Back to Feedback</a>
 	</nav>
 
 	<header>
 		<h1>Firefox Made Me Happy</h1>
 		<p>
-			Super! It's great to hear that you like our pre-released browser.
+			Great! Please tell us what you liked.
 		</p>
 	</header>
 
 	<article class="inset"><form action="#thanks" method="post">
 		<div class="field">
-			<label>Please describe what you liked.</label>
-			<textarea id="broken-desc" name="desc" rows="3"></textarea>
-			<p class="warning">For your privacy, please ensure that no personally identifiable information is included in your feedback.</p>
+			<textarea id="happy-desc" name="desc" rows="3" placeholder="Enter your feedback here."></textarea>
 		</div>
 	
 		<div class="field">
-			<label>
+			<label for="happy-hasurl">
 				<input id="happy-hasurl" name="happy-hasurl" type="checkbox" />
-				Include the URL of a site that worked better for you.
+				Include your last visited site?
 			</label>
 			<input id="happy-url" name="happy-url" type="url" value="http://www.happysite.com/" />
+		</div>
+
+		<div class="field">
+			<p class="warning"><span>For your privacy, please don't include any personally identifiable information in your feedback.</span></p>
 		</div>
 	
 		<div class="submit">
@@ -90,29 +97,31 @@
 <section id="sad">
 
 	<nav>
-		<a href="#top">Go Back</a>
+		<a href="#top">&laquo; Back to Feedback</a>
 	</nav>
 
 	<header>
 		<h1>Firefox Made Me Sad</h1>
 		<p>
-			We are sorry that you have not had a good experience with our browser. Please tell us why, so we can fix it! 
+			Oh no! Please let us know what happened so we can fix it.
 		</p>
 	</header>
 
 	<article class="inset"><form action="#thanks" method="post">
 		<div class="field">
-			<label>Please describe your problem below.</label>
-			<textarea id="broken-desc" name="desc" rows="3"></textarea>
-			<p class="warning">For your privacy, please ensure that no personally identifiable information is included in your feedback.</p>
+			<textarea id="broken-desc" name="desc" rows="3" placeholder="Enter your feedback here."></textarea>
 		</div>
 	
 		<div class="field">
-			<label>
+			<label for="sad-hasurl">
 				<input id="sad-hasurl" name="sad-hasurl" type="checkbox" />
-				Include the URL of the site with the problem.
+				Include your last visited site?
 			</label>
 			<input id="sad-url" name="sad-url" type="url" value="http://www.brokensite.com/" />
+		</div>
+
+		<div class="field">
+			<p class="warning"><span>For your privacy, please don't include any personally identifiable information in your feedback.</span></p>
 		</div>
 
 		<div class="submit">
@@ -128,22 +137,23 @@
 <section id="idea">
 	
 	<nav>
-		<a href="#top">Go Back</a>
+		<a href="#top">&laquo; Back to Feedback</a>
 	</nav>
 
 	<header>
-		<h1>Share an Idea</h1>
+		<h1>I Have an Idea</h1>
 		<p>
-			Have an idea how Firefox for Mobile could be better? Let us know! 
+			Awesome! Please share your idea. 
 		</p>
 	</header>
 
 	<article class="inset"><form action="#thanks" method="post">
 		<div class="field">
-			<label>Describe your idea below.</label>
-			<span class="char-count">250</span>
-			<textarea id="idea-desc" name="desc" rows="5"></textarea>
-			<p class="warning">For your privacy, please ensure that no personally identifiable information is included in your feedback.</p>
+			<textarea id="idea-desc" name="desc" rows="5" placeholder="Enter your idea here."></textarea>
+		</div>
+
+		<div class="field">
+			<p class="warning"><span>For your privacy, please don't include any personally identifiable information in your feedback.</span></p>
 		</div>
 	
 		<div class="submit">

@@ -1,13 +1,4 @@
 
-/* MetaWebPro font family licensed from fontshop.com. WOFF-FTW! */
-
-@font-face {
-	font-family: 'MetaBlack';
-	src: url(img/'MetaWebPro-Black.woff') format('woff'),
-	     url(img/'MetaWebPro-Black.eot');
-	font-weight: bold;
-}
-
 
 html {
 	background: url(img/bg-footer.png);
@@ -322,79 +313,6 @@ footer {
 	#top #top-broken .icon { background-position: -50px 0; }
 	#top #top-idea .icon { background-position: -100px 0; }
 
-/*
-#rate {
-}
-	#rate article {
-		padding-top: 5px;
-	}
-	#rate .aspect {
-		border-top: 1px solid rgba(255,255,255,.5);
-		border-bottom: 1px solid rgba(0,0,0,.1);
-		padding: 15px 0;
-	}
-	#rate .aspect:first-child {
-		border-top: 0;
-	}
-	#rate .aspect:last-child {
-		border-bottom: 0;
-	}
-		#rate .aspect h2 {
-			display: block;
-			margin-bottom: .25em;
-			font-size: 14px;
-			font-weight: bold;
-			text-transform: uppercase;
-			color: #585e65;
-		}
-		#rate .aspect li {
-			display: inline-block;
-			width: 20%;
-			vertical-align: top;
-			text-align: center;
-		}
-			#rate .aspect input {
-				display: none;
-			}
-			#rate .aspect label {
-				display: block;
-				padding-top: .25em;
-				font-size: 10px;
-				font-weight: normal;
-				text-transform: uppercase;
-				color: #838E98;
-				cursor: pointer;
-			}
-				#rate .aspect label b {
-					display: block;
-					width: 40px;
-					height: 40px;
-					margin: 5px auto;
-					background: url(img/ratings.png) no-repeat 0 0;
-				}
-				#rate .aspect input + label:active,
-				#rate .aspect input:checked + label {
-					color: #000;
-				}
-
-				#rate .aspect input[value="1"] + label b { background-position:    0px 0; }
-				#rate .aspect input[value="2"] + label b { background-position:  -50px 0; }
-				#rate .aspect input[value="3"] + label b { background-position: -100px 0; }
-				#rate .aspect input[value="4"] + label b { background-position: -150px 0; }
-				#rate .aspect input[value="5"] + label b { background-position: -200px 0; }
-
-				#rate .aspect input[value="1"] + label:active b { background-position:    0px -50px; }
-				#rate .aspect input[value="2"] + label:active b { background-position:  -50px -50px; }
-				#rate .aspect input[value="3"] + label:active b { background-position: -100px -50px; }
-				#rate .aspect input[value="4"] + label:active b { background-position: -150px -50px; }
-				#rate .aspect input[value="5"] + label:active b { background-position: -200px -50px; }
-
-				#rate .aspect input[value="1"]:checked + label b { background-position:    0px -100px; }
-				#rate .aspect input[value="2"]:checked + label b { background-position:  -50px -100px; }
-				#rate .aspect input[value="3"]:checked + label b { background-position: -100px -100px; }
-				#rate .aspect input[value="4"]:checked + label b { background-position: -150px -100px; }
-				#rate .aspect input[value="5"]:checked + label b { background-position: -200px -100px; }
-*/
 
 #thanks article {
 }

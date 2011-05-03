@@ -103,6 +103,10 @@ article header {
 		margin-top: 9px;
 		line-height: 18px;
 	}
+		article header p strong {
+			color: #333;
+			font-weight: bold;
+		}
 	article header p:first-child {
 		margin-top: 0;
 		line-height: 18px;
@@ -347,7 +351,7 @@ footer {
 		background: url(img/thanks.png) no-repeat 0 0;
 	}
 	#thanks #thanks-feedback:before { background-position: 0 0; }
-	#thanks #thanks-dashboard:before { background-position: -50px 0; }
-	#thanks #thanks-twitter:before { background-position: -100px 0; }
-	#thanks #thanks-facebook:before { background-position: -150px 0; }
-	#thanks #thanks-planet:before { background-position: -200px 0; }
+	#thanks #thanks-dashboard:before { background-position: 0 -50px; }
+	#thanks #thanks-twitter:before { background-position: 0 -100px; }
+	#thanks #thanks-facebook:before { background-position: 0 -150px; }
+	#thanks #thanks-planet:before { background-position: 0 -200px; }

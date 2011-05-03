@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html class="no-dev no-js">
+<html class="no-js">
 
 <head>
-	<title>Submit Feedback</title>
+	<title>Send Feedback</title>
 	<link rel="stylesheet" href="static/reset.min.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="static/style.css" type="text/css" media="screen" />
 	<meta name="viewport" content="initial-scale=1" />
@@ -31,12 +31,15 @@
 <section id="top">
 	<nav><!-- Don't remove --></nav>
 	
-	<header>
+	<header><div class="wrapper">
 		<h1>Give Feedback</h1>
-		<p>We love to hear your feedback on Firefox Mobile! What would you like to tell us?</p>
-	</header>
+	</div></header>
 
-	<article class="inset">
+	<article class="inset"><div class="wrapper">
+		<header>
+			<p>We love feedback about Firefox for Mobile! What would you like to tell us?</p>
+		</header>
+		
 		<ul class="blocks">
 			<li><a id="top-rate" href="#happy"><em class="icon"></em> <span>Firefox made me happy&hellip;</span></a></li>
 			<li><a id="top-broken" href="#sad"><em class="icon"></em> <span>Firefox made me sad&hellip;</span></a></li>
@@ -46,7 +49,7 @@
 		<div class="field">
 			<p class="warning"><span>If you need help or have a problem with Firefox, please visit <a href="#">Firefox Support</a>. </span></p>
 		</div>
-	</article>
+	</div></article>
 
 </section>
 
@@ -56,18 +59,22 @@
 
 <section id="happy">
 	
-	<nav>
-		<a href="#top">&#9666; Back to Feedback</a>
-	</nav>
+	<nav><div class="wrapper">
+		<a href="#top">Back to Feedback</a>
+	</div></nav>
 
-	<header>
-		<h1>Firefox Made Me Happy</h1>
-		<p>
-			Great! Please tell us what you liked.
-		</p>
-	</header>
+	<header><div class="wrapper">
+		<h1>Give Feedback</h1>
+	</div></header>
 
-	<article class="inset"><form action="#thanks" method="post">
+	<article class="inset"><form action="#thanks" method="get"><div class="wrapper">
+		<header class="inset">
+			<p>We're glad Firefox for Mobile made you happy! Please tell us what you liked.</p>
+			<p class="alt">
+				<span>Got an idea? <a href="#idea">Submit it instead.</a></span>
+			</p>
+		</header>
+		
 		<div class="field">
 			<textarea id="happy-desc" name="desc" rows="3" placeholder="Enter your feedback here."></textarea>
 		</div>
@@ -85,9 +92,9 @@
 		</div>
 	
 		<div class="submit">
-			<button type="submit">Submit Feedback</button>
+			<button type="submit">Send Feedback</button>
 		</div>
-	</form></article>
+	</div></form></article>
 
 </section>
 
@@ -96,18 +103,25 @@
 
 <section id="sad">
 
-	<nav>
-		<a href="#top">&laquo; Back to Feedback</a>
-	</nav>
+	<nav><div class="wrapper">
+		<a href="#top">Back to Feedback</a>
+	</div></nav>
 
-	<header>
-		<h1>Firefox Made Me Sad</h1>
-		<p>
-			Oh no! Please let us know what happened so we can fix it.
-		</p>
-	</header>
+	<header><div class="wrapper">
+		<h1>Give Feedback</h1>
+	</div></header>
 
-	<article class="inset"><form action="#thanks" method="post">
+	<article class="inset"><form action="#thanks" method="post"><div class="wrapper">
+		<header class="inset">
+			<p>
+				We're sorry Firefox for Mobile made you sad.
+				Please tell us what happened so we can fix it.
+			</p>
+			<p class="alt">
+				<span>Got an idea? <a href="#idea">Submit it instead.</a></span>
+			</p>
+		</header>
+
 		<div class="field">
 			<textarea id="broken-desc" name="desc" rows="3" placeholder="Enter your feedback here."></textarea>
 		</div>
@@ -125,9 +139,9 @@
 		</div>
 
 		<div class="submit">
-			<button type="submit">Submit Feedback</button>
+			<button type="submit">Send Feedback</button>
 		</div>
-	</form></article>
+	</div></form></article>
 
 </section>
 
@@ -136,18 +150,22 @@
 
 <section id="idea">
 	
-	<nav>
-		<a href="#top">&laquo; Back to Feedback</a>
-	</nav>
+	<nav><div class="wrapper">
+		<a href="#top">Back to Feedback</a>
+	</div></nav>
 
-	<header>
-		<h1>I Have an Idea</h1>
-		<p>
-			Awesome! Please share your idea. 
-		</p>
-	</header>
+	<header><div class="wrapper">
+		<h1>Give Feedback</h1>
+	</div></header>
 
-	<article class="inset"><form action="#thanks" method="post">
+
+	<article class="inset"><form action="#thanks" method="post"><div class="wrapper">
+		<header class="inset">
+			<p>
+				We love ideas for Firefox for Mobile! Please descibe your idea below. 
+			</p>
+		</header>
+		
 		<div class="field">
 			<textarea id="idea-desc" name="desc" rows="5" placeholder="Enter your idea here."></textarea>
 		</div>
@@ -157,23 +175,30 @@
 		</div>
 	
 		<div class="submit">
-			<button type="submit">Submit Feedback</button>
+			<button type="submit">Send Feedback</button>
 		</div>
-	</form></article>
+	</div></form></article>
 	
 </section>
 
 <!-- -->
 
 <section id="thanks">
+	<nav><div class="wrapper">
+		<a href="#top">Back to Feedback</a>
+	</div></nav>
 	
-	<header>
-		<h1>Thanks for Your Feedback</h1>
-		<p>Lorem ipsum dolor sit amet.</p>
-	</header>
+	<header><div class="wrapper">
+		<h1>Give Feedback</h1>
+	</div></header>
 
-	<article class="inset">
+	<article class="inset"><div class="wrapper">
+		<header>
+			<p>Thanks for your feedback!</p>
+		</header>
+		
 		<ul class="blocks">
+<!--
 			<li><a id="thanks-feedback" href="#top">
 				<em class="icon"></em>
 				<span>
@@ -181,7 +206,7 @@
 					<strong>Submit More Feedback</strong>
 				</span>
 			</a></li>
-
+-->
 			<li><a id="thanks-dashboard" href="#top">
 				<em class="icon"></em>
 				<span>
@@ -214,7 +239,7 @@
 				</span>
 			</a></li>
 		</ul>
-	</article>
+	</div></article>
 
 </section>
 
@@ -224,7 +249,6 @@
 <footer>
 	<div id="copyright">
 		<form>
-			<label for="language">Other languages:</label>
 			<select id="language">
 				<option>English (US)</option>
 				<option>Português (Europeu)</option>
@@ -234,15 +258,15 @@
 			<a href="#">Privacy Policy</a>
 			&nbsp;|&nbsp;
 			<a href="#">Legal Notices</a>
-			&nbsp;|&nbsp;
-			<a href="#">Report Trademark Abuse</a>
 		</p>
+<!--
 		<p>
 			Except where <a href="#">otherwise noted</a>,
 			content on this site is licensed under the
 			<a href="#">Creative Commons Attribution Share-Alike License v3.0</a>
 			or any later version.
 		</p>
+-->
 	</div>
 </footer>
 

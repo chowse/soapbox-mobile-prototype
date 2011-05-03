@@ -100,6 +100,11 @@ article header {
 	position: relative;
 }
 	article header p {
+		margin-top: 9px;
+		line-height: 18px;
+	}
+	article header p:first-child {
+		margin-top: 0;
 		line-height: 18px;
 	}
 	article header p.alt {
@@ -123,6 +128,7 @@ article header {
 			bottom: -6px;
 		}
 article header.inset {
+	min-height: 45px;
 }
 	article header.inset:before {
 		/* placeholder */
@@ -130,13 +136,12 @@ article header.inset {
 		position: absolute;
 		left: 0;
 		top: 0;
-		width: 48px;
+		width: 46px;
 		height: 48px;
-		border-radius: 24px;
-		background: #8dd63a;
+		background: url(img/type.png) no-repeat 0 0;
 	}
 	article header.inset p {
-		margin-left: 63px;
+		margin-left: 55px;
 	}
 
 
@@ -156,44 +161,46 @@ article.inset {
 		position: relative;
 		margin: 25px 0;
 	}
-	article .blocks {
+	article .choices {
 		margin: 25px 0;
 		font-size: 18px;
 	}
-		article .blocks li {
+		article .choices li {
+			position: relative;
 		}
-		article .blocks li:first-child {
-		}
-		article .blocks li:last-child {
-		}
-			article .blocks li a {
-				display: block;
-				position: relative;
-				margin: 15px 0;
-				padding-left: 55px;
-				text-decoration: none;
-				color: #5084C8;
+			article .choices li:before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 45px;
+				height: 45px;
+				background: rgba(0,0,0,.1);
 			}
-				article .blocks li a span {
-					display: table-cell;
-					height: 45px;
-					vertical-align: middle;
-				}
-				article .blocks li a .icon {
+			article .choices li span {
+				display: table-cell;
+				height: 60px;
+				vertical-align: middle;
+				padding-left: 55px;
+			}
+			article .choices li small {
+				display: block;
+				margin-bottom: 2px;
+				color: #999;
+				font-family: "droid sans", helvetica, arial, sans-serif;
+				font-size: 12px;
+			}
+			article .choices li a {
+				line-height: 21px;
+			}
+				article .choices li a:before {
+					content: '';
 					position: absolute;
 					left: 0;
+					right: 0;
 					top: 0;
-					width: 45px;
-					height: 45px;
+					bottom: 0;
 				}
-			article .blocks li:first-child a {
-			}
-			article .blocks li:last-child a {
-			}
-			article .blocks li a:active {
-				background: #447BC4;
-				color: #fff;
-			}
 	article .submit {
 		margin-top: 20px;
 	}
@@ -306,32 +313,41 @@ footer {
 
 #top article {
 }
-	#top .icon {
+	#top .choices li {
+	}
+	#top .choices li:before {
+		top: 7px;
+		width: 46px;
+		height: 48px;
 		background: url(img/type.png) no-repeat 0 0;
 	}
-	#top #top-rate .icon { background-position: 0 0; }
-	#top #top-broken .icon { background-position: -50px 0; }
-	#top #top-idea .icon { background-position: -100px 0; }
+	#top #top-happy:before { background-position: 0 0; }
+	#top #top-sad:before { background-position: 0 -50px; }
+	#top #top-idea:before { background-position: 0 -100px; }
+
+
+#sad {
+}
+	#sad header:before {
+		background-position: 0 -50px;
+	}
+
+
+#idea {
+}
+	#idea header:before {
+		background-position: 0 -100px;
+	}
 
 
 #thanks article {
 }
-	#thanks article a small {
-		display: block;
-		margin-bottom: .25em;
-		font-size: 13px;
-		font-weight: normal;
-		letter-spacing: normal;
-		color: #838E98;
-	}
-	#thanks article a:active small {
-		color: #b9cee9;
-	}
-	#thanks .icon {
+	#thanks .choices li:before {
+		top: 7px;
 		background: url(img/thanks.png) no-repeat 0 0;
 	}
-	#thanks #thanks-feedback .icon { background-position: 0 0; }
-	#thanks #thanks-dashboard .icon { background-position: -50px 0; }
-	#thanks #thanks-twitter .icon { background-position: -100px 0; }
-	#thanks #thanks-facebook .icon { background-position: -150px 0; }
-	#thanks #thanks-planet .icon { background-position: -200px 0; }
+	#thanks #thanks-feedback:before { background-position: 0 0; }
+	#thanks #thanks-dashboard:before { background-position: -50px 0; }
+	#thanks #thanks-twitter:before { background-position: -100px 0; }
+	#thanks #thanks-facebook:before { background-position: -150px 0; }
+	#thanks #thanks-planet:before { background-position: -200px 0; }
